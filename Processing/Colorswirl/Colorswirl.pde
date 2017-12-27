@@ -41,7 +41,7 @@ void setup()
   // Assumes the Arduino is the first/only serial device.  If this is not the
   // case, change the device index here.  println(Serial.list()); can be used
   // to get a list of available serial devices.
-  myPort = new Serial(this, Serial.list()[0], 115200);
+  myPort = new Serial(this, Serial.list()[1], 115200);
 
   // A special header / magic word is expected by the corresponding LED
   // streaming code running on the Arduino.  This only needs to be initialized
